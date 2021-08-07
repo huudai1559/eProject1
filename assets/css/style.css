@@ -5199,8 +5199,8 @@ only screen and (max-width: 767px) {
     text-transform: capitalize;
 }
 
-.product-review-info .tab-content.reviews-tab p {
-    font-size: 13px;
+.product-review-info .tab-content.reviews-tab li {
+    font-size: 14px;
 }
 
 .product-review-info .tab-content .review-description {
