@@ -280,6 +280,115 @@ $(document).ready(function () {
         $('#myModal').modal('show');
     });
 
+    //Show Category Main product
+    $(document).on("click", ".category-main", function (e) {
+        e.preventDefault();
+
+        let categoryMain = $(this).data('type');
+        let filteredCategoryMain = data.filter(function (item) {
+            return item.category == categoryMain;
+        });
+
+        switch(categoryMain){
+            case "LED & Lighting":
+                $("#img-category").html(`<img src="assets/img/category/category1.jpg" alt="">`);
+                break;
+            case "FANs":
+                $("#img-category").html(`<img src="assets/img/category/category2.jpg" alt="">`);
+                break;
+            case "Cables & Wires":
+                $("#img-category").html(`<img src="assets/img/category/category3.jpg" alt="">`);
+                break;
+            case "Switches & Automation":
+                $("#img-category").html(`<img src="assets/img/category/category4.jpg" alt="">`);
+                break;
+            case "Protection Devices":
+                $("#img-category").html(`<img src="assets/img/category/category5.jpg" alt="">`);
+                break;
+            case "Appliances":
+                $("#img-category").html(`<img src="assets/img/category/category6.jpg" alt="">`);
+                break;    
+        }
+        
+        paginationCategory(filteredCategoryMain);
+
+        displayCategory(filteredCategoryMain, page);
+        displayPaginationCategory(filteredCategoryMain, page);
+
+        $('.wapperCategory').toggle();
+
+        let clickName = 0;
+        let clickPrice = 0;
+        sortBy(filteredCategoryMain, clickName, clickPrice);
+    });
+
+    //Show Category Type product
+    $(document).on("click", ".category-type", function (e) {
+        e.preventDefault();
+
+        let categoryType = $(this).data('type');
+
+        let filteredCategoryType = data.filter(function (item) {
+            return item.type == categoryType;
+        });
+
+        switch(categoryType){
+            case "LED Lights":
+                $("#img-category").html(`<img src="assets/img/category/type1.jpg" alt="">`);
+                break;
+            case "CFLs":
+                $("#img-category").html(`<img src="assets/img/category/type2.jpg" alt="">`);
+                break;
+            case "Ceiling Fans":
+                $("#img-category").html(`<img src="assets/img/category/type3.jpg" alt="">`);
+                break;
+            case "Pedestal Fans":
+                $("#img-category").html(`<img src="assets/img/category/type4.jpg" alt="">`);
+                break;
+            case "Armoured Cables":
+                $("#img-category").html(`<img src="assets/img/category/type5.jpg" alt="">`);
+                break;
+            case "House Wires":
+                $("#img-category").html(`<img src="assets/img/category/type6.jpg" alt="">`);
+                break;
+            case "Modular Switches":
+                $("#img-category").html(`<img src="assets/img/category/type7.jpg" alt="">`);
+                break;
+            case "Modular Sockets":
+                $("#img-category").html(`<img src="assets/img/category/type8.jpg" alt="">`);
+                break;
+            case "MCBs":
+                $("#img-category").html(`<img src="assets/img/category/type9.jpg" alt="">`);
+                break;
+            case "RCCBs":
+                $("#img-category").html(`<img src="assets/img/category/type10.jpg" alt="">`);
+                break;
+            case "RCBOs":
+                $("#img-category").html(`<img src="assets/img/category/type11.jpg" alt="">`);
+                break;
+            case "Geysers":
+                $("#img-category").html(`<img src="assets/img/category/type12.jpg" alt="">`);
+                break;
+            case "Irons":
+                $("#img-category").html(`<img src="assets/img/category/type13.jpg" alt="">`);
+                break;
+            case "Cooking":
+                $("#img-category").html(`<img src="assets/img/category/type14.jpg" alt="">`);
+                break;
+        }
+        
+        paginationCategory(filteredCategoryType);
+
+        displayCategory(filteredCategoryType, page);
+        displayPaginationCategory(filteredCategoryType, page);
+
+        $('.wapperCategory').toggle();
+
+        let clickName = 0;
+        let clickPrice = 0;
+        sortBy(filteredCategoryType, clickName, clickPrice);
+    });
+
     //Compare product
     $(document).on("click", "#compareList", function (e) {
         e.preventDefault();
@@ -1620,3 +1729,145 @@ function setCompare(category, data, id) {
     $("#body-data").html(y);
     $('[data-id=' + id + ']').find(".addToCompare").click();
 }
+
+function displayCategory(data, page) {
+    let s = ``;
+    let t = ``;
+    let length = data.length;
+    let startItem = (page - 1) * itemsPerPage;
+    let stopItem = 0;
+
+    if (length - startItem < itemsPerPage) {
+        stopItem = length;
+    }
+    else {
+        stopItem = startItem + itemsPerPage;
+    }
+
+    t += `<p>Showing ${startItem + 1} – ${stopItem} of ${length} results</p>`;
+
+    for (let i = startItem; i < stopItem; i++) {
+        s += `<div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-item fix mb-30">
+                        <div class="product-thumb">
+                            <p>
+                                <img src="assets/img/product/${data[i].pic1}" class="img-${data[i].id}" alt="">
+                            </p>`;
+        if (data[i].feature != "") {
+            s += `<div class="product-label">
+                                <span>${data[i].feature}</span>
+                            </div>`;
+        }
+        s += `<div class="product-action-link">
+                                <a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}"><span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare" id="compareList" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}"><i class="fa fa-refresh"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h4><a href="product-details.html">${data[i].title}</a></h4>
+                            <div class="pricebox">
+                                <span class="regular-price">Rs. ${data[i].price}</span>
+                                <span class="old-price"><del>Rs. ${data[i].old_price}</del></span>
+                                <div class="ratings">
+                                    <span class="good"><i class="fa fa-star"></i></span>
+                                    <span class="good"><i class="fa fa-star"></i></span>
+                                    <span class="good"><i class="fa fa-star"></i></span>
+                                    <span class="good"><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <div class="pro-review">
+                                        <span>1 review(s)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item mb-30">
+                        <div class="product-thumb">
+                            <a href="product-details.html">
+                                <img src="assets/img/product/${data[i].pic1}" class="img-${data[i].id}" alt="">
+                            </a>`;
+        if (data[i].feature != "") {
+            s += `<div class="product-label">
+                                <span>${data[i].feature}</span>
+                            </div>`;
+        }
+
+        s += `</div>
+                        <div class="product-list-content">
+                            <h3><a href="product-details.html">${data[i].title}</a></h3>
+                            <div class="ratings">
+                                <span class="good"><i class="fa fa-star"></i></span>
+                                <span class="good"><i class="fa fa-star"></i></span>
+                                <span class="good"><i class="fa fa-star"></i></span>
+                                <span class="good"><i class="fa fa-star"></i></span>
+                                <span><i class="fa fa-star"></i></span>
+                                <div class="pro-review">
+                                    <span>1 review(s)</span>
+                                </div>
+                            </div>
+                            <div class="pricebox">
+                                <span class="regular-price">Rs. ${data[i].price}</span>
+                                <span class="old-price"><del>Rs. ${data[i].old_price}</del></span>
+                            </div>
+                            <p>${data[i].note1}</p>
+                            <p>${data[i].note2}</p>
+                            <div class="product-list-action-link">
+                                <a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}> <span data-toggle="tooltip" data-placement="top" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare" id="compareList" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}"><i class="fa fa-refresh"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>`;
+    }
+
+    $("#showing-results-caregory").html(t);
+    $("#productCategory").html(s);
+}
+
+function paginationCategory(data) {
+    $(document).on("click", "#linkCategory", function (e) {
+        e.preventDefault();
+
+        let page_no = $(this).data('id');
+
+        console.log(page_no);
+
+        displayCategory(data, page_no);
+        displayPaginationCategory(data, page_no);
+    });
+}
+
+function displayPaginationCategory(data, page) {
+    let n = Math.ceil(data.length / itemsPerPage);
+    let previous;
+    let next;
+
+    if (page <= 1) {
+        previous = page;
+        next = page + 1;
+    }
+    else if (page > n - 1) {
+        previous = page - 1;
+        next = page;
+    }
+    else {
+        previous = page - 1;
+        next = page + 1;
+    }
+
+    let s = `<li><a class="Previous" href="#" id="linkCategory" data-id="${previous}">Previous</a></li>`;
+    for (let i = 1; i <= n; i++) {
+        if (i == page) {
+            s += `<li class="active"><a href="#" id="linkCategory" data-id="${i}">${i}</a></li>`;
+        }
+        else {
+            s += `<li><a href="#" id="linkCategory" data-id="${i}">${i}</a></li>`;
+        }
+    }
+    s += `<li><a class="Next" href="#" id="linkCategory" data-id=${next}> Next </a></li>`;
+
+
+
+    $(".pagination-category").html(s);
+}
+

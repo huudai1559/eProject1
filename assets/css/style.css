@@ -7842,7 +7842,7 @@ a:hover {
 }
 
 .wapper {
-    z-index: 3;
+    z-index: 10000;
     display: none;
     position: fixed;
     left: 0;
@@ -7861,4 +7861,36 @@ a:hover {
     text-align: center;
     text-shadow: gainsboro 3px 3px 3px;
     text-transform: uppercase;
+}
+
+.wapperCategory {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0 3%;
+    padding: 1% 3%;
+    width: 94%;
+    height: 100%;
+    overflow: scroll;
+    background-color: white;
+}
+
+.paginatoin-area .pagination-category li {
+    display: inline-block;
+}
+
+.paginatoin-area .pagination-category li a {
+    color: #404040;
+    padding: 10px;
+}
+
+.paginatoin-area .pagination-category li a:hover {
+    color: #d8373e;
+}
+
+.paginatoin-area .pagination-category li.active a {
+    background-color: red;
+    color: whitesmoke;
 }
