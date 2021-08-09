@@ -4379,7 +4379,7 @@ only screen and (max-width: 767px) {
     position: relative;
 }
 
-.blog-item .blog-thumb a:before {
+.blog-item .blog-thumb p:before {
     top: 0;
     left: 0;
     width: 100%;
@@ -4399,7 +4399,7 @@ only screen and (max-width: 767px) {
     transform: scale(0);
 }
 
-.blog-item .blog-thumb a:after {
+.blog-item .blog-thumb p:after {
     right: 0;
     bottom: 0;
     width: 100%;
@@ -4419,8 +4419,8 @@ only screen and (max-width: 767px) {
     transform: scale(0);
 }
 
-.blog-item .blog-thumb:hover a:before,
-.blog-item .blog-thumb:hover a:after {
+.blog-item .blog-thumb:hover p:before,
+.blog-item .blog-thumb:hover p:after {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
