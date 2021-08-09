@@ -19,7 +19,7 @@ Project title: Harvel Electric
              Nguyen Van Dung Student1316206
 ============================
 
-eProject documentation at 
+eProject documentation at https://github.com/huudai1559/eProject1/tree/main/documentation
 
 ============================
 
