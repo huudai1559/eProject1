@@ -1265,6 +1265,10 @@ function setModal(product, data) {
                                                                             <td><b>Warranty</b></td>
                                                                             <td>${product.warranty}</td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td><b>Catalouge</b></td>
+                                                                            <td><a href="assets/catalogue/LED AND LIGHTING.docx"><button class="btn-outline-danger">CLICK TO DOWNLOAD</button></a></td>
+                                                                        </tr>
                 `;
             break;
         case "FANs":
@@ -1321,6 +1325,10 @@ function setModal(product, data) {
                                                                             <td><b>Warranty</b></td>
                                                                             <td>${product.warranty}</td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td><b>Catalouge</b></td>
+                                                                            <td><a href="assets/catalogue/FANS.docx"><button class="btn-outline-danger">CLICK TO DOWNLOAD</button></a></td>
+                                                                        </tr>
                 `;
             break;
         case "Cables & Wires":
@@ -1356,6 +1364,10 @@ function setModal(product, data) {
                                                                         <tr>
                                                                             <td><b>Thickness of Insulation</b></td>
                                                                             <td>${product.thickness_of_insulation}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><b>Catalouge</b></td>
+                                                                            <td><a href="assets/catalogue/CABLES AND WIRES.docx"><button class="btn-outline-danger">CLICK TO DOWNLOAD</button></a></td>
                                                                         </tr>
                     `;
             break;
@@ -1396,6 +1408,10 @@ function setModal(product, data) {
                                                                         <tr>
                                                                             <td><b>Warranty</b></td>
                                                                             <td>${product.warranty}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><b>Catalouge</b></td>
+                                                                            <td><a href="assets/catalogue/SWITCHES.docx"><button class="btn-outline-danger">CLICK TO DOWNLOAD</button></a></td>
                                                                         </tr>
                 `;
             break;
@@ -1457,6 +1473,10 @@ function setModal(product, data) {
                                                                             <td><b>Warranty</b></td>
                                                                             <td>${product.warranty}</td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td><b>Catalouge</b></td>
+                                                                            <td><a href="assets/catalogue/PROTECTION DEVICES.docx"><button class="btn-outline-danger">CLICK TO DOWNLOAD</button></a></td>
+                                                                        </tr>
                 `;
             break;
         case "Appliances":
@@ -1492,6 +1512,10 @@ function setModal(product, data) {
                                                                         <tr>
                                                                             <td><b>Warranty</b></td>
                                                                             <td>${product.warranty}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><b>Catalouge</b></td>
+                                                                            <td><a href="assets/catalogue/APPLIANCES.docx"><button class="btn-outline-danger">CLICK TO DOWNLOAD</button></a></td>
                                                                         </tr>
                 `;
             break;
