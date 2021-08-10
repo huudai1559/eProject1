@@ -20,7 +20,7 @@ Table of content
 17. my account
 18. compare
 19. login register
-20.about us
+20. about us
 21. contact us
 22. banner
 23. parallax banner
@@ -54,12 +54,6 @@ button:focus {
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-}
-
-.form-control:focus {
-    border-color: #fedc19;
-    -webkit-box-shadow: none;
-    box-shadow: none;
 }
 
 img {

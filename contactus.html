@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="meta description">
 
     <!-- Site title -->
-    <title>Service</title>
+    <title>Contact Us Page</title>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
@@ -20,7 +21,7 @@
     <link href="assets/css/plugins.css" rel="stylesheet">
     <!-- Main Style CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/skin-default.css" rel="stylesheet" id="galio-skin">
+    
 </head>
 
 <body>
@@ -238,21 +239,21 @@
                     <div class="col-lg-6">
                         <div class="contact-message">
                             <h2>tell us your project</h2>
-                            <form id="contact-form" action="http://demo.hasthemes.com/galio-v6/galio/assets/php/mail.php" method="post" class="contact-form">
+                            <form id="contact-form" action="contactus.html" method="GET" class="contact-form">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <input name="first_name" placeholder="Name *" type="text" required>    
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <input name="phone" placeholder="Phone *" type="text" required>   
+                                        <input name="phone" placeholder="Phone *" type="number" required>   
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <input name="email_address" placeholder="Email *" type="text" required>    
+                                        <input name="email_address" placeholder="Email *" type="email" required pattern="^[a-zA-Z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$">    
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <input name="contact_subject" placeholder="Subject *" type="text">   
                                     </div>
-                                <div class="col-12">
+                                    <div class="col-12">
                                         <div class="contact2-textarea text-center">
                                             <textarea placeholder="Message *" name="message"  class="form-control2" required=""></textarea>     
                                         </div>   
@@ -406,7 +407,7 @@
                                         <li><i class="fa fa-map-marker"></i>Address: 590 Cach Mang Thang Tam street,
                                             Ward 11, District 3, Ho Chi Minh City. VietNam</li>
                                     </ul>
-                                    <a class="map-btn" href="contact-us.html">open in google map</a>
+                                    <a class="map-btn" href="contactus.html">open in google map</a>
                                 </div>
                             </div> <!-- single widget end -->
                         </div> <!-- single widget column end -->
@@ -636,8 +637,6 @@
     </div>
     <!-- End Show category product -->
 
-    <!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script> 
     <!-- Jquery Min Js -->
     <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
     <!-- Popper Min Js -->
@@ -646,9 +645,8 @@
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <!-- Plugins Js-->
     <script src="assets/js/plugins.js"></script>
-    <!-- Ajax Mail Js -->
-    <script src="assets/js/ajax-mail.js"></script>
     <!-- Active Js -->
+    <script src="assets/js/main1.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Switcher JS [Please Remove this when Choose your Final Projct] -->
     <script src="assets/js/switcher.js"></script>

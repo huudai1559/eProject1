@@ -57,15 +57,23 @@ $(document).ready(function () {
 
     // Alerts infomation
     $(document).on("click", "#subscribe", function(e){
-        alert("Thank you for subscribing. Please press Ok to go home page!");
+        alert("Thank you for subscribing. Please press Ok to go Home page!");
     });
 
     $("#subcribeMail").submit(function (e){
-        alert("Thank you for subscribing. Please press Ok to go home page!");
+        alert("Thank you for subscribing. Please press Ok to go Home page!");
     });
 
     $(document).on("click","#shareBlog", function(e){
-        alert("Thank you for sharing. Please press Ok to go blog page!");
+        alert("Thank you for sharing. Please press Ok to go Blog page!");
+    });
+
+    $("#contact-form").submit(function (e){
+        e.preventDefault();
+
+        alert("Your message has been sent, we will respond later!");
+
+        $('#contact-form input, #contact-form textarea').val('');
     });
 
     //Filter product type
