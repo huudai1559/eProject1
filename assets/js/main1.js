@@ -837,6 +837,8 @@ $(document).ready(function () {
 
     //Signin - Signup Member
     $("#form-signup").submit(function (e) {
+        e.preventDefault();
+
         let name = $("#name").val();
 
         let email = $("#email").val();
@@ -877,7 +879,14 @@ $(document).ready(function () {
         let sINFO = info.join("\n");
         alert(sINFO);
 
-        alert("Member information is successfully registered. Please click Ok to return to the HomePage!");
+        alert("Member information is successfully registered. Please click Ok to close tab!");
+
+        //Clear value
+        $("#name").val("");
+        $("#email").val("");
+        $("#password").val("");
+        $("#cpassword").val("");
+        $("#subnewsletter").prop("checked", false);
     });
 
     $("#form-signin").submit(function (e) {
@@ -900,7 +909,10 @@ $(document).ready(function () {
         }
         else{
             e.preventDefault();
-            alert("Member information is not registered. Please register!")
+            alert("Member information is not registered. Please register!");
+            $("#name1").val("");
+            $("#password1").val("");
+            $("#rememberMe").prop("checked", false);
             $("#name").focus();
         }
     });
