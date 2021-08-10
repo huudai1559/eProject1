@@ -55,6 +55,19 @@ $(document).ready(function () {
         });
     });
 
+    // Alerts infomation
+    $(document).on("click", "#subscribe", function(e){
+        alert("Thank you for subscribing. Please press Ok to go home page!");
+    });
+
+    $("#subcribeMail").submit(function (e){
+        alert("Thank you for subscribing. Please press Ok to go home page!");
+    });
+
+    $(document).on("click","#shareBlog", function(e){
+        alert("Thank you for sharing. Please press Ok to go blog page!");
+    });
+
     //Filter product type
     $(document).on("click", ".type", function (e) {
         e.preventDefault();
@@ -319,7 +332,7 @@ $(document).ready(function () {
 
         let clickName = 0;
         let clickPrice = 0;
-        sortBy(filteredCategoryMain, clickName, clickPrice);
+        sortByCategory(filteredCategoryMain, clickName, clickPrice);
     });
 
     //Show Category Type product
@@ -386,7 +399,7 @@ $(document).ready(function () {
 
         let clickName = 0;
         let clickPrice = 0;
-        sortBy(filteredCategoryType, clickName, clickPrice);
+        sortByCategory(filteredCategoryType, clickName, clickPrice);
     });
 
     //Compare product
@@ -499,7 +512,7 @@ $(document).ready(function () {
                         /*appending to div*/
 
                         $(".product1").append(`<td class="product-image-title">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="#" class="image dis">
                                                         <img class="img-fluid" src="${image}"
                                                     alt="Compare Product">
                                                     </a>
@@ -556,7 +569,7 @@ $(document).ready(function () {
                         /*appending to div*/
 
                         $(".product1").append(`<td class="product-image-title">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="#" class="image dis">
                                                         <img class="img-fluid" src="${image}"
                                                     alt="Compare Product">
                                                     </a>
@@ -611,7 +624,7 @@ $(document).ready(function () {
                         /*appending to div*/
 
                         $(".product1").append(`<td class="product-image-title">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="#" class="image dis">
                                                         <img class="img-fluid" src="${image}"
                                                     alt="Compare Product">
                                                     </a>
@@ -662,7 +675,7 @@ $(document).ready(function () {
                         /*appending to div*/
 
                         $(".product1").append(`<td class="product-image-title">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="#" class="dis">
                                                         <img class="img-fluid" src="${image}"
                                                     alt="Compare Product">
                                                     </a>
@@ -718,7 +731,7 @@ $(document).ready(function () {
                         /*appending to div*/
 
                         $(".product1").append(`<td class="product-image-title">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="#" class="image dis">
                                                         <img class="img-fluid" src="${image}"
                                                     alt="Compare Product">
                                                     </a>
@@ -770,7 +783,7 @@ $(document).ready(function () {
                         /*appending to div*/
 
                         $(".product1").append(`<td class="product-image-title">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="#" class="image dis">
                                                         <img class="img-fluid" src="${image}"
                                                     alt="Compare Product">
                                                     </a>
@@ -882,8 +895,6 @@ $(document).ready(function () {
             alert("Member information is not registered. Please register!")
             $("#name").focus();
         }
-
-        
     });
 });
 
@@ -1022,18 +1033,25 @@ function displayPagination(data, page) {
     let previous;
     let next;
 
-    if (page <= 1) {
-        previous = page;
-        next = page + 1;
-    }
-    else if (page > n - 1) {
-        previous = page - 1;
+    if(data.length <= itemsPerPage){
         next = page;
+        previous = page;
     }
-    else {
-        previous = page - 1;
-        next = page + 1;
+    else{
+        if (page <= 1) {
+            previous = page;
+            next = page + 1;
+        }
+        else if (page > n - 1) {
+            previous = page - 1;
+            next = page;
+        }
+        else {
+            previous = page - 1;
+            next = page + 1;
+        }
     }
+    
 
     let s = `<li><a class="Previous" href="#" id="link" data-id="${previous}">Previous</a></li>`;
     for (let i = 1; i <= n; i++) {
@@ -1085,7 +1103,7 @@ function displayImages(data, page) {
                             </div>
                         </div>
                         <div class="product-content">
-                            <h4><a href="product-details.html">${data[i].title}</a></h4>
+                            <h4><a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}">${data[i].title}</a></h4>
                             <div class="pricebox">
                                 <span class="regular-price">Rs. ${data[i].price}</span>
                                 <span class="old-price"><del>Rs. ${data[i].old_price}</del></span>
@@ -1104,7 +1122,7 @@ function displayImages(data, page) {
                     </div>
                     <div class="product-list-item mb-30">
                         <div class="product-thumb">
-                            <a href="product-details.html">
+                            <a href="#" class="dis">
                                 <img src="assets/img/product/${data[i].pic1}" class="img-${data[i].id}" alt="">
                             </a>`;
         if (data[i].feature != "") {
@@ -1115,7 +1133,7 @@ function displayImages(data, page) {
 
         s += `</div>
                         <div class="product-list-content">
-                            <h3><a href="product-details.html">${data[i].title}</a></h3>
+                            <h3><a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}">${data[i].title}</a></h3>
                             <div class="ratings">
                                 <span class="good"><i class="fa fa-star"></i></span>
                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1574,7 +1592,7 @@ function setModal(product, data) {
             x += `
                                                 <div class="product-item fix">
                                                     <div class="product-thumb">
-                                                        <a href="product-details.html">
+                                                        <a href="#" class="dis">
                                                             <img src="assets/img/product/${data[i].pic1}" class="img-pri" alt="">
                                                         </a>`;
             if (data[i].feature != "") {
@@ -1588,7 +1606,7 @@ function setModal(product, data) {
                                                         </div>
                                                     </div>
                                                     <div class="product-content">
-                                                        <h4><a href="product-details.html">${data[i].title}</a></h4>
+                                                        <h4><a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}">${data[i].title}</a></h4>
                                                         <div class="pricebox">
                                                             <span class="regular-price">Rs. ${data[i].price}</span>
                                                             <span class="old-price"><del>Rs. ${data[i].old_price}</del></span>
@@ -1788,7 +1806,7 @@ function displayCategory(data, page) {
                             </div>
                         </div>
                         <div class="product-content">
-                            <h4><a href="product-details.html">${data[i].title}</a></h4>
+                            <h4><a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}">${data[i].title}</a></h4>
                             <div class="pricebox">
                                 <span class="regular-price">Rs. ${data[i].price}</span>
                                 <span class="old-price"><del>Rs. ${data[i].old_price}</del></span>
@@ -1807,7 +1825,7 @@ function displayCategory(data, page) {
                     </div>
                     <div class="product-list-item mb-30">
                         <div class="product-thumb">
-                            <a href="product-details.html">
+                            <a href="#" class="dis">
                                 <img src="assets/img/product/${data[i].pic1}" class="img-${data[i].id}" alt="">
                             </a>`;
         if (data[i].feature != "") {
@@ -1816,9 +1834,9 @@ function displayCategory(data, page) {
                             </div>`;
         }
 
-        s += `</div>
+        s += `          </div>
                         <div class="product-list-content">
-                            <h3><a href="product-details.html">${data[i].title}</a></h3>
+                            <h3><a href="#" id="divImage" data-id="${data[i].id}" data-type="${data[i].type}" data-category="${data[i].category}">${data[i].title}</a></h3>
                             <div class="ratings">
                                 <span class="good"><i class="fa fa-star"></i></span>
                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1866,17 +1884,23 @@ function displayPaginationCategory(data, page) {
     let previous;
     let next;
 
-    if (page <= 1) {
-        previous = page;
-        next = page + 1;
-    }
-    else if (page > n - 1) {
-        previous = page - 1;
+    if(data.length <= itemsPerPage){
         next = page;
+        previous = page;
     }
-    else {
-        previous = page - 1;
-        next = page + 1;
+    else{
+        if (page <= 1) {
+            previous = page;
+            next = page + 1;
+        }
+        else if (page > n - 1) {
+            previous = page - 1;
+            next = page;
+        }
+        else {
+            previous = page - 1;
+            next = page + 1;
+        }
     }
 
     let s = `<li><a class="Previous" href="#" id="linkCategory" data-id="${previous}">Previous</a></li>`;
@@ -1895,3 +1919,71 @@ function displayPaginationCategory(data, page) {
     $(".pagination-category").html(s);
 }
 
+function sortByCategory(data, clickName, clickPrice) {
+    $(document).on("click", "#sortName-category", function (e) {
+        e.preventDefault();
+
+        let newData = data.slice();
+
+        clickName += 1;
+
+        if (clickName % 2 == 0) {
+            newData.sort(function (a, b) {
+                let avalue = a.title.toLowerCase();
+                let bvalue = b.title.toLowerCase();
+
+                if (avalue > bvalue) { return -1; }
+                if (avalue < bvalue) { return 1; }
+                return 0;
+            });
+        }
+        else {
+            newData.sort(function (a, b) {
+                let avalue = a.title.toLowerCase();
+                let bvalue = b.title.toLowerCase();
+
+                if (avalue < bvalue) { return -1; }
+                if (avalue > bvalue) { return 1; }
+                return 0;
+            });
+        }
+
+        paginationCategory(newData);
+
+        displayCategory(newData, page);
+        displayPaginationCategory(newData, page);
+    });
+
+    $(document).on("click", "#sortPrice-category", function (e) {
+        e.preventDefault();
+
+        let newData = data.slice();
+
+        clickPrice += 1;
+
+        if (clickPrice % 2 == 0) {
+            newData.sort(function (a, b) {
+                return b.price - a.price;
+            });
+        }
+        else {
+            newData.sort(function (a, b) {
+                return a.price - b.price;
+            });
+        }
+
+        paginationCategory(newData);
+
+        displayCategory(newData, page);
+        displayPaginationCategory(newData, page);
+    });
+
+    $(document).on("click", "#unsort-category", function (e) {
+        e.preventDefault();
+
+        paginationCategory(data);
+
+        displayCategory(data, page);
+        displayPaginationCategory(data, page);
+    });
+}
