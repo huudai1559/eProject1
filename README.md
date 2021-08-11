@@ -12,11 +12,11 @@ Project title: Harvel Electric
 
 3 collaborators:
 
-             Nguyen Huu Dai Student1313748
+             Nguyen Huu Dai       Student1313748
 
-             Chu Tu Minh Thanh Student1316202
+             Chu Tu Minh Thanh    Student1316202
              
-             Nguyen Van Dung Student1316206
+             Nguyen Van Dung      Student1316206
 ============================
 
 eProject documentation at https://github.com/huudai1559/eProject1/tree/main/documentation
