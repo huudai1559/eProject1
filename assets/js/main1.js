@@ -269,7 +269,7 @@ $(document).ready(function () {
 
         $('.featured-carousel-active').slick({
             autoplay: false,
-            infinite: true,
+            infinite: false,
             fade: false,
             dots: false,
             arrows: true,

@@ -267,7 +267,7 @@
 		var $this = $(this);
 		var $row = $this.attr("data-row") ? parseInt($this.attr("data-row"), 10) : 1;
 		$this.slick({
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			dots: false,
 			slidesToShow: 4,
