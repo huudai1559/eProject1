@@ -1222,13 +1222,13 @@ function setModal(product, data) {
                                                                 title="Compare" id="compareList" data-id="${product.id}" data-type="${product.type}" data-category="${product.category}"><i class="fa fa-refresh"></i>compare</a>
                                                         </div>
                                                         <div class="share-icon mt-20">
-                                                            <a class="facebook" href="#"><i
+                                                            <a class="facebook dis" href="#"><i
                                                                     class="fa fa-facebook"></i>like</a>
-                                                            <a class="twitter" href="#"><i
+                                                            <a class="twitter dis" href="#"><i
                                                                     class="fa fa-twitter"></i>tweet</a>
-                                                            <a class="pinterest" href="#"><i
+                                                            <a class="pinterest dis" href="#"><i
                                                                     class="fa fa-pinterest"></i>save</a>
-                                                            <a class="google" href="#"><i
+                                                            <a class="google dis" href="#"><i
                                                                     class="fa fa-google-plus"></i>share</a>
                                                         </div>
                                                     </div>
@@ -1654,7 +1654,7 @@ function setModal(product, data) {
                             </div>
                         </div>
         `;
-    $('.modal-body').html(x);
+    $('#modalProduct').html(x);
 }
 
 function setCompare(category, data, id) {
