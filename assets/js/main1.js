@@ -106,6 +106,10 @@ $(document).ready(function () {
 
         displayImages(data, page);
         displayPagination(data, page);
+
+        let clickName = 0;
+        let clickPrice = 0;
+        sortBy(data, clickName, clickPrice);
     });
 
     //Filter product brand
