@@ -1836,7 +1836,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-11",
+        "id": "p5-11",
         "title": "Crabtree 6A C-Curve 10kA 1 Pole MCB",
         "price": 150,
         "old_price": 205,
@@ -1867,7 +1867,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-12",
+        "id": "p5-12",
         "title": "Crabtree 10A C-Curve 10kA 1 Pole MCB",
         "price": 150,
         "old_price": 205,
@@ -1898,7 +1898,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-13",
+        "id": "p5-13",
         "title": "Legrand DX3 408587 6A C-Curve 10kA 1 Pole MCB",
         "price": 177,
         "old_price": 322,
@@ -1929,7 +1929,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-14",
+        "id": "p5-14",
         "title": "Legrand DX3 408590 10A C-Curve 10kA 1 Pole MCB",
         "price": 177,
         "old_price": 322,
@@ -1960,7 +1960,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-15",
+        "id": "p5-15",
         "title": "Crabtree 6A C-Curve 10kA 2 Pole MCB",
         "price": 509,
         "old_price": 696,
@@ -1992,7 +1992,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-16",
+        "id": "p5-16",
         "title": "Crabtree 10A C-Curve 10kA 2 Pole MCB",
         "price": 509,
         "old_price": 696,
@@ -2023,7 +2023,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-17",
+        "id": "p5-17",
         "title": "ABB 6A C-Curve 10kA 3 Pole MCB",
         "price": 828,
         "old_price": 1380,
@@ -2054,7 +2054,7 @@
     {
         "category":"Protection Devices",
         "type":"MCBs",
-        "id": "P5-18",
+        "id": "p5-18",
         "title": "ABB 10A C-Curve 10kA 3 Pole MCB",
         "price": 828,
         "old_price": 1380,
@@ -2086,7 +2086,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-21",
+        "id": "p5-21",
         "title": "Crabtree Xpro 16A 100mA 2 Pole RCCB",
         "price": 2005,
         "old_price": 2740,
@@ -2117,7 +2117,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-22",
+        "id": "p5-22",
         "title": "Crabtree Xpro 16A 100mA 2 Pole RCCB",
         "price": 2005,
         "old_price": 2740,
@@ -2148,7 +2148,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-23",
+        "id": "p5-23",
         "title": "ABB 25A 30mA 2 Pole RCCB",
         "price": 1857,
         "old_price": 3095,
@@ -2179,7 +2179,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-24",
+        "id": "p5-24",
         "title": "ABB 25A 100mA 2 Pole RCCB",
         "price": 1950,
         "old_price": 3250,
@@ -2210,7 +2210,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-25",
+        "id": "p5-25",
         "title": "Legrand DX3 411851 25A 30mA 2 Pole RCCB",
         "price": 2101,
         "old_price": 3502,
@@ -2241,7 +2241,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-26",
+        "id": "p5-26",
         "title": "Havells 25A 100mA 2 Pole RCCB",
         "price": 2143,
         "old_price": 2521,
@@ -2272,7 +2272,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-27",
+        "id": "p5-27",
         "title": "Crabtree Xpro 40A 300mA 4 Pole RCCB",
         "price": 2490,
         "old_price": 3403,
@@ -2303,7 +2303,7 @@
     {
         "category":"Protection Devices",
         "type":"RCCBs",
-        "id": "P5-28",
+        "id": "p5-28",
         "title": "ABB 25A 30mA 4 Pole RCCB",
         "price": 2466,
         "old_price": 4110,
@@ -2334,7 +2334,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-31",
+        "id": "p5-31",
         "title": "Hager ADC216Y 16A 30mA Double Pole RCBO",
         "price": 2536,
         "old_price": 3825,
@@ -2365,7 +2365,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-32",
+        "id": "p5-32",
         "title": "Hager ADC225Y 25A 30mA Double Pole RCBO",
         "price": 2536,
         "old_price": 3825,
@@ -2397,7 +2397,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-33",
+        "id": "p5-33",
         "title": "Legrand DX3 411324 16A 30mA Double Pole RCBO",
         "price": 2466,
         "old_price": 4110,
@@ -2428,7 +2428,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-34",
+        "id": "p5-34",
         "title": "Legrand DX3 411325 25A 30mA Double Pole RCBO",
         "price": 2466,
         "old_price": 4110,
@@ -2459,7 +2459,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-35",
+        "id": "p5-35",
         "title": "Legrand DX3 411365 16A 30mA Four Pole RCBO",
         "price": 3476,
         "old_price": 5794,
@@ -2490,7 +2490,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-36",
+        "id": "p5-36",
         "title": "L&T AUF3C401603 16A 30mA Four Pole RCBO",
         "price": 3900,
         "old_price": 4875,
@@ -2521,7 +2521,7 @@
     {
         "category":"Protection Devices",
         "type":"RCBOs",
-        "id": "P5-37",
+        "id": "p5-37",
         "title": "Hager ADC416Y 16A 30mA Four Pole RCBO",
         "price": 3573,
         "old_price": 6260,
@@ -2553,7 +2553,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-11",
+        "id": "p6-11",
         "title": "Crompton Arno Neo 6 Ltr Storage Geysers",
         "price": 5625,
         "old_price": 7500,
@@ -2578,7 +2578,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-12",
+        "id": "p6-12",
         "title": "Racold Altro 10 Ltr Storage Geyser",
         "price": 5950,
         "old_price": 7360,
@@ -2603,7 +2603,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-13",
+        "id": "p6-13",
         "title": "Crompton Solarium Deluxe 10 Ltr Storage Geyser",
         "price": 6310,
         "old_price": 6310,
@@ -2628,7 +2628,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-14",
+        "id": "p6-14",
         "title": "Racold CDR 10 Ltr Vertical Storage Geyser",
         "price": 7719,
         "old_price": 8125,
@@ -2653,7 +2653,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-15",
+        "id": "p6-15",
         "title": "Atlantic 1 Ltr Instant Geyser",
         "price": 2849,
         "old_price": 3490,
@@ -2678,7 +2678,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-16",
+        "id": "p6-16",
         "title": "Crompton Solarium Deluxe 1 Ltr Instant Geyser",
         "price": 2511,
         "old_price": 2511,
@@ -2703,7 +2703,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-17",
+        "id": "p6-17",
         "title": "Racold Pronto Neo 1 Ltr Instant Geyser",
         "price": 3087,
         "old_price": 3250,
@@ -2728,7 +2728,7 @@
     {
         "category":"Appliances",
         "type":"Geysers",
-        "id": "P6-18",
+        "id": "p6-18",
         "title": "V-Guard Iris 3 Ltr Instant Geyser",
         "price": 4950,
         "old_price": 5100,
@@ -2753,7 +2753,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-21",
+        "id": "p6-21",
         "title": "Havells Era Dry Iron",
         "price": 950,
         "old_price": 1055,
@@ -2778,7 +2778,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-22",
+        "id": "p6-22",
         "title": "Syska SDI-07 Dry Iron",
         "price": 610,
         "old_price": 749,
@@ -2803,7 +2803,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-23",
+        "id": "p6-23",
         "title": "Havells Oro Dry Iron",
         "price": 1256,
         "old_price": 1395,
@@ -2828,7 +2828,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-24",
+        "id": "p6-24",
         "title": "Wipro Deluxe W10002 Dry Iron",
         "price": 688,
         "old_price": 750,
@@ -2853,7 +2853,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-25",
+        "id": "p6-25",
         "title": "Havells Sparkle Steam Iron",
         "price": 1886,
         "old_price": 2095,
@@ -2878,7 +2878,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-26",
+        "id": "p6-26",
         "title": "Havells Admire Blue Steam Iron",
         "price": 2606,
         "old_price": 2895,
@@ -2903,7 +2903,7 @@
     {
         "category":"Appliances",
         "type":"Irons",
-        "id": "P6-27",
+        "id": "p6-27",
         "title": "Wipro W10004 Steam Iron",
         "price": 1375,
         "old_price": 1795,
@@ -2928,7 +2928,7 @@
     {
         "category":"Appliances",
         "type":"Cooking",
-        "id": "P6-31",
+        "id": "p6-31",
         "title": "Havells Crisp Pop Up Toaster",
         "price": 1976,
         "old_price": 2195,
@@ -2953,7 +2953,7 @@
     {
         "category":"Appliances",
         "type":"Cooking",
-        "id": "P6-32",
+        "id": "p6-32",
         "title": "Hindware ROYAL PLUS Oven",
         "price": 37599,
         "old_price": 39990,
@@ -2978,7 +2978,7 @@
     {
         "category":"Appliances",
         "type":"Cooking",
-        "id": "P6-33",
+        "id": "p6-33",
         "title": "Hindware Dino Induction Cooktop",
         "price": 3511,
         "old_price": 3990,
@@ -3003,7 +3003,7 @@
     {
         "category":"Appliances",
         "type":"Cooking",
-        "id": "P6-34",
+        "id": "p6-34",
         "title": "Havells Insta Cook ET-X Induction Cooktop",
         "price": 4244,
         "old_price": 4715,
@@ -3028,7 +3028,7 @@
     {
         "category":"Appliances",
         "type":"Cooking",
-        "id": "P6-35",
+        "id": "p6-35",
         "title": "Hindware SAVIO Microwave Oven",
         "price": 30899,
         "old_price": 31990,
@@ -3053,7 +3053,7 @@
     {
         "category":"Appliances",
         "type":"Cooking",
-        "id": "P6-36",
+        "id": "p6-36",
         "title": "Havells Toastino Multigrill Sandwich Toaster",
         "price": 4496,
         "old_price": 4995,
